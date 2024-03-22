@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f9fd;
+}
+.container{
+    margin-top: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.budget-container,
+.expenses-container{
+    height: 35vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+ h3,input{
+    background-color: white;
+    padding: 7px;
+    margin-top: 5px;
+}
+input{
+    border: 1px solid rgba(207, 201, 201, 0.8);
+}
+
+button{
+    background-color: rgb(56, 56, 240);
+    margin-top: 10px;
+    width: 30%;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    color: rgba(245, 245, 245,0.8);
+}
+/* .submit {
+    font-size: 1em;
+    margin-top: 0.8em;
+    background-color: #587ef4;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+} */
+.total-budget-container{
+    background-color: rgb(56, 56, 240);
+    display: flex;
+    margin-top: 20px;
+    margin: 2em 0;
+    padding: 1.2em;
+    justify-content: space-around;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+p,span{
+    color: rgba(245, 245, 245,0.96);
+}
+span{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+.expense-list{
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 1.6em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+  }
+  .sublist-content {
+    width: 100%;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+  }
+  .product {
+    font-weight: 500;
+    color: #363d55;
+  }
+  .amount {
+    color: #414a67;
+    margin-left: 20%;
+  }
+  .icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+  }
+  .hide {
+    display: none;
+  }
+  .error {
+    color: #ff465a;
+  }
+  .edit {
+    margin-left: auto;
+  }
+  .edit,
+  .delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #587ef4;
+  }
